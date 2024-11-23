@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TgJf0Te2raA2r4VZ0EvnNt2f2MDxR7yBleuExD2jm7M2rYCwRvHQSCZP+RytGtNXhkG5tykX7XXw6VdJwDMmlw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jhsup\\OneDrive - Washington University in St. Louis\\AgentBMB\\DiaryApp\\JohnnyDiaryWeb\\JohnnyDiaryWeb\\JohnnyDiaryWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhsup\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,63 @@
+﻿@model List<JohnnyDiaryWeb.Models.NoteEntry>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diary App or Note Taking App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Diary App or Note Taking App</h1>
+
+        <!-- Form to Add a New Note -->
+        <form asp-action="Add" method="post">
+            <div class="form-group">
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Note</button>
+        </form>
+
+        <hr>
+
+        <!-- Display Notes -->
+        @if (Model.Count > 0)
+        {
+            <h2>Saved Notes</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Message</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var note in Model)
+                    {
+                        <tr>
+                            <td>@note.Title</td>
+                            <td>@note.Message</td>
+                            <td>
+                                <form asp-action="Delete" method="post" style="display:inline;">
+                                    <input type="hidden" name="title" value="@note.Title" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No notes saved yet!</p>
+        }
+    </div>
+</body>
+</html>
