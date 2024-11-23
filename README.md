@@ -1,5 +1,9 @@
 # DiaryApp
 
+
+![DiaryApp Homepage](https://github.com/user-attachments/assets/ce28c725-eb8c-4d6c-9c95-5f25d3bb7734)
+
+
 Johnny's first ever Diary app/notes taking app created using .NET and C sharp.
 
 here is an example ASP.NET application created by johnny the baguette using C# and the .NET MVC framework. The front end is built only with HTML with no need for Javascript event listeners and instead utilizies "Controllers" from .NET framework. Tied together with a "service" backend for logic of creating new notes, deleting notes. Tied together also with main "controllers" framework as mentioned before that sets up the ROUTES for the application and website Index.cshtml page, my website link, privacy endpoint, etc. 
